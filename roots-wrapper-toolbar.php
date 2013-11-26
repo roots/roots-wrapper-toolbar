@@ -52,7 +52,6 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
         'meta'   => array('class' => 'roots-toolbar', 'title' => esc_url($main_template))
       );
 
-      global $template;
       $base = array(
         'parent' => self::$parent,
         'id'     => 'rwtb-base',
