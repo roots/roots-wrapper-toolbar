@@ -25,4 +25,6 @@ Everyone is welcome to help and improve this project. There are several ways you
 
 ## Support
 
-Visit [Roots Discourse](http://discourse.roots.io/) to to ask questions and get support from the Roots community.
+Please visit [Roots Discourse](http://discourse.roots.io/) to ask questions and get support from the Roots community. 
+
+If you would like to support the author, why not try the [Roots Wrapper Override](http://roots.io/plugins/roots-wrapper-override/) plugin?
