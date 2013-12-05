@@ -10,6 +10,9 @@ Clone or download the repo and place into the `plugins` directory of your Roots 
 
 Alternatively, copy the `roots-wrapper-toolbar.php` into your `mu-plugins` folder to prevent unwanted or accidental de-activation.
 
+### Privileges
+The default user level to view the toolbar is set using `is_super_admin()`. You can override this by filtering `rwt_user_level`. Set the filter function to return true to display the toolbar, or false to hide it.
+
 ## Contributing
 
 Everyone is welcome to help and improve this project. There are several ways you can contribute:
