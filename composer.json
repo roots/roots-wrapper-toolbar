@@ -1,0 +1,24 @@
+{
+  "name": "roots/roots-wrapper-toolbar",
+  "type": "wordpress-plugin",
+  "license": "MIT",
+  "description": "A WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the Roots wrapper in the WordPress toolbar. Requires the Roots theme and wrapper.",
+  "homepage": "http://roots.io/",
+  "authors": [
+    {
+      "name": "Nick Fox",
+      "email": "nick@roots.io",
+      "homepage": "https://github.com/roots"
+    }
+  ],
+  "keywords": [
+    "wordpress", "wp", "roots", "plugin"
+  ],
+  "support": {
+    "issues": "https://github.com/roots/roots-wrapper-toolbar/issues",
+    "forum": "http://discourse.roots.io/"
+  },
+  "require": {
+    "composer/installers": "v1.0.6"
+  }
+}
