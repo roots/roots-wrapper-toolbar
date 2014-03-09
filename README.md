@@ -1,6 +1,6 @@
 # [Roots Wrapper Toolbar](http://roots.io/plugins/roots-wrapper-toolbar/)
 
-The Roots Wrapper Toolbar is a WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the [Roots wrapper](http://roots.io/an-introduction-to-the-roots-theme-wrapper/) in the WordPress toolbar. 
+The Roots Wrapper Toolbar is a WordPress plugin (or mu-plugin) that displays the base and main templates selected by the [Roots wrapper](http://roots.io/an-introduction-to-the-roots-theme-wrapper/) in the WordPress toolbar. 
 
 It requires the [Roots theme](http://roots.io/) and wrapper to function.
 

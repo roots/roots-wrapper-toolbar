@@ -2,7 +2,7 @@
 /*
 Plugin Name:  Roots Wrapper Toolbar
 Plugin URI:   http://github.com/roots/roots-wrapper-toolbar
-Description:  A WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the Roots wrapper in the WordPress toolbar. Requires the <a href="http://roots.io/">Roots</a> theme and wrapper.
+Description:  A WordPress plugin (or mu-plugin) that displays the base and main templates selected by the Roots wrapper in the WordPress toolbar. Requires the <a href="http://roots.io/">Roots</a> theme and wrapper.
 Version:      1.0.0
 Author:       Nick Fox
 Author URI:   http://roots.io/
