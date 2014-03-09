@@ -3,7 +3,7 @@
 Plugin Name:  Roots Wrapper Toolbar
 Plugin URI:   http://github.com/roots/roots-wrapper-toolbar
 Description:  A WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the Roots wrapper in the WordPress toolbar. Requires the <a href="http://roots.io/">Roots</a> theme and wrapper.
-Version:      0.9
+Version:      1.0.0
 Author:       Nick Fox
 Author URI:   http://roots.io/
 License:      MIT
@@ -16,7 +16,7 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
   class Roots_Wrapper_Toolbar {
     private static $_single; // A singleton will prevent multiple toolbar dropdowns.
     public static $parent; // Use as the node parent if you want to add more dropdowns to the group.
-  
+
     function __construct() {
       if (!isset(self::$_single)) {
         self::$_single = $this; // Singleton set.
