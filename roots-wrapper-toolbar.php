@@ -24,7 +24,7 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
       }
     }
 
-    public function init($toolbar) {
+    public static function init($toolbar) {
     if (is_admin() || !apply_filters('rwt_user_level', is_super_admin()) || !is_admin_bar_showing() || !class_exists('Roots_Wrapping')) return; // Use is_super_admin for network support.
 
       global $template;
