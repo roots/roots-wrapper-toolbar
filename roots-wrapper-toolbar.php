@@ -51,7 +51,7 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
         'parent' => self::$parent,
         'id'     => 'rwtb-main',
         'href'   => $theme_editor . '?file=' . basename($main_template) . '&theme=' . $theme_name,
-        'title'  => '<b>' . __('Main: ', 'roots') . '</b>' . basename($main_template),
+        'title'  => __('Main: ', 'roots') . basename($main_template),
         'meta'   => array('class' => 'roots-template-main', 'title' => esc_url($main_template))
       );
 
@@ -59,22 +59,14 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
         'parent' => self::$parent,
         'id'     => 'rwtb-base',
         'href'   => $theme_editor . '?file=' . basename($base_template) . '&theme=' . $theme_name,
-        'title'  => '<b>' . __('Base: ', 'roots') . '</b>' . basename($base_template),
+        'title'  => __('Base: ', 'roots') . basename($base_template),
         'meta'   => array('class' => 'roots-template-base', 'title' => esc_url($base_template))
       );
 
       ?>
-        <style>
-          #wp-admin-bar-rwtb div:first-child:before {
-            content: "\f115";
-          }
-          #wp-admin-bar-rwtb-templates {
-            padding-top: 2px !important;
-          }
-          #wp-admin-bar-rwtb-templates b {
-            font-weight: bold;
-          }
-        </style>
+      <style>
+        #wp-admin-bar-rwtb div:first-child:before { content: "\f115"; }
+      </style>
       <?php
 
       $toolbar->add_node($top); // Add the top level, group and template nodes to the toolbar.
