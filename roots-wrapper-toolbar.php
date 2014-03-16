@@ -29,35 +29,53 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
 
       global $template;
 
+      $theme_name     = wp_get_theme(); // Get Current Theme Name.
+      $theme_editor   = admin_url('theme-editor.php'); // Get Theme Editor URL.
       $main_template  = Roots_Wrapping::$main_template; // Chosen by the WordPress template hierarchy.
       $base_template  = $template; // Base file selected by the Roots Wrapper.
       self::$parent   = 'rwtb-templates'; // The id for the dropdown group.
 
       $top = array(
         'id'    => 'rwtb',
-        'title' => __('Roots', 'roots'),
+        'title' => __('Roots Wrapper', 'roots'),
         'meta'  => array('class' => 'roots-toolbar')
       );
 
       $group = array(
         'parent' => 'rwtb',
-        'id'     => self::$parent,
+        'id'     => 'rwtb-templates',
         'meta'   => array('class' => 'roots-templates')
       );
 
       $main = array(
         'parent' => self::$parent,
         'id'     => 'rwtb-main',
-        'title'  => __('Main: ', 'roots') . basename($main_template),
-        'meta'   => array('class' => 'roots-toolbar', 'title' => esc_url($main_template))
+        'href'   => $theme_editor . '?file=' . basename($main_template) . '&theme=' . $theme_name,
+        'title'  => '<b>' . __('Main: ', 'roots') . '</b>' . basename($main_template),
+        'meta'   => array('class' => 'roots-template-main', 'title' => esc_url($main_template))
       );
 
       $base = array(
         'parent' => self::$parent,
         'id'     => 'rwtb-base',
-        'title'  => __('Base: ', 'roots') . basename($base_template),
-        'meta'   => array('class' => 'roots-toolbar', 'title' => esc_url($base_template))
+        'href'   => $theme_editor . '?file=' . basename($base_template) . '&theme=' . $theme_name,
+        'title'  => '<b>' . __('Base: ', 'roots') . '</b>' . basename($base_template),
+        'meta'   => array('class' => 'roots-template-base', 'title' => esc_url($base_template))
       );
+
+      ?>
+        <style>
+          #wp-admin-bar-rwtb div:first-child:before {
+            content: "\f115";
+          }
+          #wp-admin-bar-rwtb-templates {
+            padding-top: 2px !important;
+          }
+          #wp-admin-bar-rwtb-templates b {
+            font-weight: bold;
+          }
+        </style>
+      <?php
 
       $toolbar->add_node($top); // Add the top level, group and template nodes to the toolbar.
       $toolbar->add_group($group);
