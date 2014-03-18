@@ -35,13 +35,13 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
 
       $top = array(
         'id'    => 'rwtb',
-        'title' => __('Roots', 'roots'),
+        'title' => __('Roots Wrapper', 'roots'),
         'meta'  => array('class' => 'roots-toolbar')
       );
 
       $group = array(
         'parent' => 'rwtb',
-        'id'     => self::$parent,
+        'id'     => 'rwtb-templates',
         'meta'   => array('class' => 'roots-templates')
       );
 
@@ -49,15 +49,21 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
         'parent' => self::$parent,
         'id'     => 'rwtb-main',
         'title'  => __('Main: ', 'roots') . basename($main_template),
-        'meta'   => array('class' => 'roots-toolbar', 'title' => esc_url($main_template))
+        'meta'   => array('class' => 'roots-template-main', 'title' => esc_url($main_template))
       );
 
       $base = array(
         'parent' => self::$parent,
         'id'     => 'rwtb-base',
         'title'  => __('Base: ', 'roots') . basename($base_template),
-        'meta'   => array('class' => 'roots-toolbar', 'title' => esc_url($base_template))
+        'meta'   => array('class' => 'roots-template-base', 'title' => esc_url($base_template))
       );
+
+      ?>
+      <style>
+        #wp-admin-bar-rwtb > div:first-child:before { content: "\f115"; }
+      </style>
+      <?php
 
       $toolbar->add_node($top); // Add the top level, group and template nodes to the toolbar.
       $toolbar->add_group($group);
