@@ -61,7 +61,7 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
 
       ?>
       <style>
-        #wp-admin-bar-rwtb > div:first-child:before { content: "\f115"; }
+        #wp-admin-bar-rwtb > div:first-child:before { content: "\f115"; top: 2px; }
       </style>
       <?php
 
