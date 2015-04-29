@@ -2,7 +2,7 @@
   "name": "roots/roots-wrapper-toolbar",
   "type": "wordpress-plugin",
   "license": "MIT",
-  "description": "A WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the Roots wrapper in the WordPress toolbar. Requires the Roots theme and wrapper.",
+  "description": "A WordPress plugin (or mu-plugin) that displays the base and sidebar templates selected by the Roots wrapper in the WordPress toolbar. It requires the Roots Wrapper found in the Roots and Sage starter themes and PHP 5.4 or greater.",
   "homepage": "http://roots.io/",
   "authors": [
     {
@@ -19,6 +19,7 @@
     "forum": "http://discourse.roots.io/"
   },
   "require": {
+    "php": ">=5.4",
     "composer/installers": ">=1.0.6"
   }
 }

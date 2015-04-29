@@ -2,11 +2,32 @@
 
 The Roots Wrapper Toolbar is a WordPress plugin (or mu-plugin) that displays the base and main templates selected by the [Roots wrapper](http://roots.io/an-introduction-to-the-roots-theme-wrapper/) in the WordPress toolbar. 
 
-It requires the [Roots theme](http://roots.io/) and wrapper to function.
+It requires the [Roots Wrapper](http://roots.io/) found in Roots and Sage starter themes and PHP 5.4 or greater.
+
+## Requirements
+
+<table>
+  <thead>
+    <tr>
+      <th>Prerequisite</th>
+      <th>How to check</th>
+      <th>How to install</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PHP &gt;= 5.4.x</td>
+      <td><code>php -v</code></td>
+      <td>
+        <a href="http://php.net/manual/en/install.php">php.net</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## Installation
 
-Clone or download the repo and place into the `plugins` directory of your Roots based theme and activate.
+Clone or download the repo and place into the `plugins` directory of your Roots or Sage based theme and activate.
 
 Alternatively, copy the `roots-wrapper-toolbar.php` into your `mu-plugins` folder to prevent unwanted or accidental de-activation.
 
