@@ -25,11 +25,11 @@ if (!class_exists('Roots_Wrapper_Toolbar')) {
     }
 
     public static function init($toolbar) {
-    if (is_admin() || !apply_filters('rwt_user_level', is_super_admin()) || !is_admin_bar_showing() || !class_exists('Roots_Wrapping')) return; // Use is_super_admin for network support.
+    if (is_admin() || !apply_filters('rwt_user_level', is_super_admin()) || !is_admin_bar_showing() || !class_exists('Roots\Sage\Wrapper\SageWrapping')) return; // Use is_super_admin for network support.
 
       global $template;
 
-      $main_template  = Roots_Wrapping::$main_template; // Chosen by the WordPress template hierarchy.
+      $main_template  = Roots\Sage\Wrapper\SageWrapping::$main_template; // Chosen by the WordPress template hierarchy.
       $base_template  = $template; // Base file selected by the Roots Wrapper.
       self::$parent   = 'rwtb-templates'; // The id for the dropdown group.
 
